@@ -2,14 +2,14 @@ name: Test & build Docker image
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
     tags: ['*']
   pull_request:
   schedule:
     - cron: '0 2 * * 6'
 
 env:
-  IMAGE_NAME: trafex/php-nginx
+  IMAGE_NAME: huankong233/php-nginx
   IMAGE_TAG: ${{ github.sha }}
   DOCKER_BUILDKIT: 1
 
@@ -82,3 +82,4 @@ jobs:
             -t $IMAGE_NAME:$RELEASE_VERSION \
             --platform linux/amd64,linux/arm64,linux/arm/v7,linux/arm/v6 \
             .
+
