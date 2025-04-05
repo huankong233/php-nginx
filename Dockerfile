@@ -1,5 +1,5 @@
 ARG ALPINE_VERSION=3.20
-FROM frolvlad/alpine-glibc:alpine-3.20
+FROM frolvlad/alpine-glibc:alpine-3.21
 LABEL Maintainer="Tim de Pater <code@trafex.nl>"
 LABEL Description="Lightweight container with Nginx 1.24 & PHP 8.3 based on Alpine Linux."
 # Setup document root
